@@ -59,7 +59,7 @@ for (let i = 0; i < dishes.length; i++) {
     const dishName = dishes[i].name;
     const dishPrice = dishes[i].price;
     const dishIngredients = dishes[i].ingredients.join(", ");
-    const dishInfo = `${dishName} - $${dishPrice} - ${dishIngredients}`;
+    const dishInfo = `${dishName} - ${dishPrice} - ${dishIngredients}`;
     console.log(dishInfo);
   };
 
@@ -69,7 +69,7 @@ for (let i = 0; i < dishes.length; i++) {
   const dishName = dishes[i].name;
   const dishPrice = dishes[i].price;
   const dishIngredients = dishes[i].ingredients.join(", ");
-  const dishInfo = `${dishName} - $${dishPrice} - ${dishIngredients}`;
+  const dishInfo = `${dishName} - ${dishPrice} - ${dishIngredients}`;
   menu += dishInfo + "\n";
 }
 
