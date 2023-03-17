@@ -1,48 +1,52 @@
-let dish1 = {
-    name: "pizza",
-    ingredients: ["dough", "tomato sauce", "chees", "ham", "champignons"],
-    price: 12,
-    cost: 5
-  };
-  
-let dish2 = {
-    name: "salad",
-    ingredients: ["lettuce", "tomatoes", "cucumbers", "olives", "feta cheese"],
-    price: 6,
-    cost: 2
-  };
-  
-let dish3 = {
-    name: "soup",
-    ingredients: ["meat broth", "potato", "carrot", "onion", "chicken"],
-    price: 8,
-    cost: 3
-  };
-  
-let menu = [dish1, dish2, dish3];
-  
-  menu.shift();
-  let removedDish = {
-    name: "pizza",
-    ingredients: ["dough", "tomato sauce", "chees", "champignons"],
-    price: 12,
-    cost: 5
-  };
-  menu.unshift(removedDish);
-  
-  menu.forEach(dish => {
-    const profit = dish.price - dish.cost;
-    dish.profit = profit;
-  });
-  console.log(menu);
-//это тема обьекты и массивы
-//тема циклы
-for (let i = 0; i < 10; i++) {
+let dishes = [
+  {
+    name: 'Beef Stew',
+    ingredients: ['potatoes', 'carrots', 'onions', 'beef'],
+    sellPrice: 15,
+    costOfPreparation: 0 
+  },
+  {
+    name: 'Roasted Chicken',
+    ingredients: ['chicken', 'potatoes', 'carrots', 'onions'],
+    sellPrice: 12,
+    costOfPreparation: 0 
+  },
+  {
+    name: 'Fish and Chips',
+    ingredients: ['fish', 'potatoes'],
+    sellPrice: 10,
+    costOfPreparation: 0 
+  }
+];
 
-  if (i % 3 === 0) {
-		continue;
-	}
+let ingredientsCost = {
+  'potatoes': 1,
+  'carrots': 0.5,
+  'onions': 0.3,
+  'beef': 5,
+  'chicken': 3,
+  'fish': 4
+};
 
-  alert(i); 
+for (let i = 0; i < dishes.length; i++) {
+  let cost = 0;
+  for (let j = 0; j < dishes[i].ingredients.length; j++) {
+    cost += ingredientsCost[dishes[i].ingredients[j]];
+  }
+  dishes[i].costOfPreparation = cost;
+};
+
+for (let i = 0; i < dishes.length; i++) {
+  dishes[i].profit = dishes[i].sellPrice - dishes[i].costOfPreparation;
+};
+
+for (let i = 0; i < dishes.length; i++) {
+  console.log(`Dish: ${dishes[i].name}`);
+  console.log(`Ingredients: ${dishes[i].ingredients.join(', ')}`);
+  console.log(`Cost of preparation: $${dishes[i].costOfPreparation}`);
+  console.log(`Sell price: $${dishes[i].sellPrice}`);
+  console.log(`Profit: $${dishes[i].profit}\n`);
 }
-console.log(i);
+
+
+	
