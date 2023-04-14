@@ -1,44 +1,7 @@
-const dish1 = {
-    name: "pizza",
-    ingredients: ["dough", "tomato sauce", "chees", "ham", "champignons"],
-    price: 12,
-    cost: 5
-  };
-  
-  const dish2 = {
-    name: "salad",
-    ingredients: ["lettuce", "tomatoes", "cucumbers", "olives", "feta cheese"],
-    price: 6,
-    cost: 2
-  };
-  
-  const dish3 = {
-    name: "soup",
-    ingredients: ["meat broth", "potato", "carrot", "onion", "chicken"],
-    price: 8,
-    cost: 3
-  };
-  
-  const menu = [dish1, dish2, dish3];
-  
-  menu.shift();
-  const removedDish = {
-    name: "pizza",
-    ingredients: ["dough", "tomato sauce", "chees", "champignons"],
-    price: 12,
-    cost: 5
-  };
-  menu.unshift(removedDish);
-  
-  menu.forEach(dish => {
-    const profit = dish.price - dish.cost;
-    dish.profit = profit;
-  });
-  console.log(menu);
 
-  //Выводим все четные числа до 10, без continue
+//Выводим все четные числа до 10, без continue
 
-  let count = 0;
+let count = 0;
 let i = 0;
 
 while (count < 10) {
@@ -69,28 +32,39 @@ const ingredientStorage = {
   butter: { cost: 3 },
   eggs: { cost: 2 },
   salt: { cost: 0.5 },
+  pasta: {cost:2},
+  groundBeef: {cost:4},
+  tomatoSauce: {cost:0.5},
+  breadCrumbs: {cost:1},
+  chickenBreast: {cost:2},
+  vegetables: {cost:2},
+  soySauce: {cost:0.5},
+  cornstarch: {cost:0.2},
+  rice: {cost:0.3},
 };
 
 //Создаю набор блюд
-const dishes = [  {    name: "Chocolate chip cookies",    ingredients: ["flour", "sugar", "butter", "eggs", "salt"],
-    cookingCost: 0,
-    sellingPrice: 5,
-    profit: 0,
-  },
-  {
-    name: "Spaghetti with meatballs",
-    ingredients: ["pasta", "ground beef", "tomato sauce", "breadcrumbs", "eggs"],
-    cookingCost: 0,
-    sellingPrice: 12,
-    profit: 0,
-  },
-  {
-    name: "Chicken stir-fry",
-    ingredients: ["chicken breast", "vegetables", "soy sauce", "cornstarch", "rice"],
-    cookingCost: 0,
-    sellingPrice: 15,
-    profit: 0,
-  },
+const dishes = [{
+  name: "Chocolate chip cookies", 
+  ingredients: ["flour", "sugar", "butter", "eggs", "salt"],
+  cookingCost: 0,
+  sellingPrice: 24,
+  profit: 0,
+},
+{
+  name: "Spaghetti with meatballs",
+  ingredients: ["pasta", "groundBeef", "tomatoSauce", "breadCrumbs", "eggs"],
+  cookingCost: 0,
+  sellingPrice: 28,
+  profit: 0,
+},
+{
+  name: "Chicken stir-fry",
+  ingredients: ["chickenBreast", "vegetables", "soySauce", "cornstarch", "rice"],
+  cookingCost: 0,
+  sellingPrice: 15,
+  profit: 0,
+},
 ];
 
 // Рассчитываю стоимость приготовления каждого блюда
@@ -111,4 +85,3 @@ for (let i = 0; i < dishes.length; i++) {
 
 console.log(dishes);
 
-  
