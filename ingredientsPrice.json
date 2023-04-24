@@ -1,0 +1,58 @@
+{
+  "flour": {
+    "vegan": true,
+    "cost": 2
+  },
+  "sugar": {
+    "vegan": true,
+    "cost": 1
+  },
+  "butter": {
+    "vegan": true,
+    "cost": 3
+  },
+  "eggs": {
+    "vegan": false,
+    "cost": 2
+  },
+    "salt": {
+    "vegan": true,
+    "cost": 0.5
+  },
+  "pasta": {
+    "vegan": true,
+    "cost": 2
+  },
+  "groundBeef": {
+    "vegan": false,
+    "cost": 4
+  },
+  "tomatoSause": {
+    "vegan": true,
+    "cost": 0.5
+  },
+  "breadCrumbs": {
+    "vegan": true,
+    "cost": 1
+  },
+  "chikenBreast": {
+    "vegan": false,
+    "cost": 2
+  },
+  "vegetables": {
+    "vegan": true,
+    "cost": 2
+  },
+  "soySauce": {
+    "vegan": true,
+    "cost": 0.5
+  },
+  "cornstarch": {
+    "vegan": true,
+    "cost": 0.2
+  },
+  "rice": {
+    "vegan": true,
+    "cost": 0.3
+  }
+}
