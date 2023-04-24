@@ -1,0 +1,43 @@
+{
+  "dishes": [
+    {
+      "name": "Chocolate chip cookies",
+      "ingredients": [
+        "flour",
+        "sugar",
+        "butter",
+        "eggs",
+        "salt"
+      ],
+      "cookingCost": 0,
+      "sellingPrice": 24,
+      "profit": 0
+    },
+    {
+      "name": "Spaghetti with meatballs",
+      "ingredients": [
+        "pasta",
+        "groundBeef",
+        "tomatoSauce",
+        "breadCrumbs",
+        "eggs"
+      ],
+      "cookingCost": 0,
+      "sellingPrice": 28,
+      "profit": 0
+    },
+    {
+      "name": "Chicken stir-fry",
+      "ingredients": [
+        "chickenBreast",
+        "vegetables",
+        "soySauce",
+        "cornstarch",
+        "rice"
+      ],
+      "cookingCost": 0,
+      "sellingPrice": 15,
+      "profit": 0
+    }
+  ]
+}
